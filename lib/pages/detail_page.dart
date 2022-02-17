@@ -25,21 +25,21 @@ class DetailPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Container(
-              padding: EdgeInsets.all(6),
+              padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Text(
                 article.source.name,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               )),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
             article.desc,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           )
         ],
       ),

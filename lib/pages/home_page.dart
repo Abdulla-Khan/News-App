@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'News App',
           style: TextStyle(color: Colors.black),
         ),
@@ -28,14 +28,14 @@ class _HomeState extends State<Home> {
           if (snapchot.hasData) {
             List<Article>? articles = snapchot.data;
             return ListView.builder(
-                physics: BouncingScrollPhysics(),
+                physics: const BouncingScrollPhysics(),
                 itemCount: articles!.length,
                 itemBuilder: (context, index) {
                   return customTile(articles[index], context);
                 });
           }
 
-          return Center(
+          return const Center(
             child: CircularProgressIndicator(),
           );
         },

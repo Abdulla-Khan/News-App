@@ -7,13 +7,13 @@ Widget customTile(Article article, BuildContext context) {
     onTap: () => Navigator.push(context,
         MaterialPageRoute(builder: (_) => DetailPage(article: article))),
     child: Container(
-      margin: EdgeInsets.all(12),
-      padding: EdgeInsets.all(8),
+      margin: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
-            BoxShadow(
+            const BoxShadow(
               color: Colors.black12,
               blurRadius: 3.0,
             ),
@@ -31,21 +31,21 @@ Widget customTile(Article article, BuildContext context) {
               borderRadius: BorderRadius.circular(8),
             ),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Container(
-              padding: EdgeInsets.all(6),
+              padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
                 color: Colors.red,
                 borderRadius: BorderRadius.circular(30),
               ),
               child: Text(
                 article.source.name,
-                style: TextStyle(color: Colors.white),
+                style: const TextStyle(color: Colors.white),
               )),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
             article.title,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           )
         ],
       ),

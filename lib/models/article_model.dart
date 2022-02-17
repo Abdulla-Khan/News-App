@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:news_app/models/source_model.dart';
 
 class Article {
