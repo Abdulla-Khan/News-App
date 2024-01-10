@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:news_app/models/article_model.dart';
 
 class DetailPage extends StatelessWidget {
-  DetailPage({Key? key, required this.article}) : super(key: key);
-  Article article;
+  const DetailPage({Key? key, required this.article}) : super(key: key);
+  final Article article;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

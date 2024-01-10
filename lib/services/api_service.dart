@@ -11,8 +11,10 @@ class ApiService {
     if (res.statusCode == 200) {
       Map<String, dynamic> json = jsonDecode(res.body);
       List<dynamic> body = json['articles'];
-      List<Article> articles =
-          body.map((dynamic item) => Article.FromJSON(item)).toList();
+      List<Article> articles = [];
+      for (var i in body) {
+        articles.add(Article.FromJSON(i));
+      }
       return articles;
     } else {
       throw ("Can't get article");

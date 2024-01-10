@@ -11,12 +11,12 @@ class Article {
   factory Article.FromJSON(Map<String, dynamic> json) {
     return Article(
         Source.fromJSON(json['source']),
-        json['author'] as String,
-        json['title'] as String,
-        json['description'] as String,
-        json['url'] as String,
-        json['urlToImage'] as String,
-        json['publishedAt'] as String,
-        json['content'] as String);
+        json['author'] ?? "",
+        json['title'],
+        json['description'],
+        json['url'],
+        json['urlToImage'] ?? "",
+        json['publishedAt'],
+        json['content']);
   }
 }

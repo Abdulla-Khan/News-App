@@ -1,9 +1,8 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.news_app">
-   <application
-        android:label="News App"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="newsapp"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launche">
+        android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
             android:exported="true"
